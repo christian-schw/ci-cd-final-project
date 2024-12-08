@@ -96,7 +96,20 @@ With regard to my role:<br>
 ## What I have done as part of the project
 
 ### Task 1 - CI with GitHub Actions
-TODO: XXXXX<br>
+First the workflow YML file with the name of the workflow as well as the events, the job, the runner including the container and required steps were defined:<br>
+
+![1 Implement workflow yaml](https://github.com/user-attachments/assets/b7e5491a-0c46-4033-a151-bfc82c10aa72)
+
+If you check the Actions tab on the GitHub website, you will see executed workflows:<br>
+
+![2 All workflows view in Github](https://github.com/user-attachments/assets/16ea6f15-6872-4329-985e-83d848e12121)
+
+After clicking on the build job, exact details of the individual steps can be viewed:<br>
+
+![3 detailed view of build workflow](https://github.com/user-attachments/assets/972ae13b-51ef-4c0c-8620-a66ee30b86d7)
+
+The logs show that everything is working perfectly.<br>
+The CD part can now be implemented.<br>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
