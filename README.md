@@ -34,7 +34,16 @@
 ## Introduction
 This repository was created as part of IBM's "Continuous Integration and Delivery (CI/CD)" course.<br>
 It's a project about building a CI/CD pipeline.<br>
+<br>
 Much of the code was cloned from the IBM repository: https://github.com/ibm-developer-skills-network/vselh-ci-cd-final-project-template<br>
+<br>
+Scenario: You’re part of a team responsible for building an innovative microservice, a RESTful API that allows users to manage and track counters.<br>
+Another team has already developed the user interface (UI) for this microservice,<br>
+and it's now your turn to ensure the reliability and efficiency of the backend services.<br>
+<br>
+Tasks that need to be completed:
+- Continuous Integration (CI) with GitHub Actions - Linting and testing
+- Continuous Deployment (CD) with OpenShift Pipelines - Linting, testing, building an image and deploying the microservice to an OpenShift Cluster
 <br>
 Preview images of the project:<br>
 
