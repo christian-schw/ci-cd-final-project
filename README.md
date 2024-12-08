@@ -20,8 +20,8 @@
     <li>
       <a href="#what-i-have-done-as-part-of-the-project">What I have done as part of the project</a></li>
       <ul>
-        <li><a href="#task-1---setup-of-github-actions-and-implement-a-workflow">Task 1 - Setup of GitHub Actions and implement a workflow</a></li>
-        <li><a href="#task-2---building-a-tekton-pipeline">Task 2 - Building a Tekton Pipeline</a></li>
+        <li><a href="#task-1---ci-with-github-actions">Task 1 - CI with GitHub Actions</a></li>
+        <li><a href="#task-2---cd-with-tekton-and-openshift">Task 2 - CD with Tekton and OpenShift</a></li>
       </ul>
     </li>
     <li><a href="#getting-started">Getting Started</a></li>
@@ -46,8 +46,13 @@ Tasks that need to be completed:
 - Continuous Deployment (CD) with OpenShift Pipelines - Linting, testing, building an image and deploying the microservice to an OpenShift Cluster
 <br>
 Preview images of the project:<br>
+<br>
 
-TODO: Insert preview images XXXXXX<br>
+![3 detailed view of build workflow](https://github.com/user-attachments/assets/06bcfc61-8b28-451c-8add-9bfba58c8532)
+
+![1 Implement tasks yaml](https://github.com/user-attachments/assets/f5dbe65a-87d5-46f0-b2ca-f1222b52bcbc)
+
+![9 adding deploy openshift-client task to pipeline](https://github.com/user-attachments/assets/3e7323d8-76d2-4c66-985b-3e7d466e2707)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
@@ -77,7 +82,6 @@ Course Provider: IBM<br>
 
 ### Tech Stack
 With regard to my role:<br>
-TODO: Insert new tech stack XXXXXXXXX
 - CI/CD Tool: GitHub Actions
 - CI/CD Tool: Tekton
 - Container Orchestration: Kubernetes
@@ -91,14 +95,14 @@ TODO: Insert new tech stack XXXXXXXXX
 
 ## What I have done as part of the project
 
-### Task 1 - Setup of GitHub Actions and implement a workflow
+### Task 1 - CI with GitHub Actions
 TODO: XXXXX<br>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
 
 
-### Task 2 - Building a Tekton Pipeline
+### Task 2 - CD with Tekton and OpenShift
 TODO: XXXXX<br>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
