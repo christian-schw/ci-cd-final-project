@@ -116,8 +116,62 @@ The CD part can now be implemented.<br>
 
 
 ### Task 2 - CD with Tekton and OpenShift
-TODO: XXXXX<br>
+The next step is to create the CD workflow in OpenShift.<br>
+The cleanup task is added first that will clean the output workspace so that the CD pipeline can start fresh.<br>
+<br>
+The corresponding YML file (/.tekton/tasks.yml):<br>
 
+![1 Implement tasks yaml](https://github.com/user-attachments/assets/1ff138cf-3a5d-4936-a911-bd174169044b)
+
+The test task (with the testing framework nose) is added after the cleanup task:<br>
+
+![2 Adding task nose to tasks yaml](https://github.com/user-attachments/assets/2c15300f-a2db-48dd-9e70-4248676dcead)
+
+Applying the new tasks to the cluster and verifying:<br>
+
+![3 applying and verifying tasks yml](https://github.com/user-attachments/assets/6c871a48-bcd0-4c01-89bd-68dbe006ccc0)
+
+The pipeline is now built using the OpenShift Web Console.<br>
+A Workspace / PersistentVolumeClaim (PVC) is required for the tasks.<br>
+<br>
+The creation of the PVC:<br>
+
+![4 creating pvc in openshift webconsole](https://github.com/user-attachments/assets/b0bf7237-4426-4a17-ae93-7085f06fb5dd)
+
+A pipeline including a workspace object was then created using the PVC.<br>
+The cleanup task in tasks.yml has been added to the pipeline and tested:<br>
+
+![5 create pipeline with 1 task and test it](https://github.com/user-attachments/assets/2db2daaa-55e4-4a1b-88ab-b01bc823645d)
+
+![5 part 2 create pipeline with 1 task and test it](https://github.com/user-attachments/assets/cacf55c2-0763-4425-b68b-a78b59dd6a58)
+
+The logs show that everything is working perfectly.<br>
+Further tasks are added to the pipeline:<br>
+
+![6 adding further tasks in openshift pipeline](https://github.com/user-attachments/assets/04d2e9cd-8830-4812-989f-0ae16b57b6c3)
+
+The pipeline is then executed and the logs are examined:<br>
+
+![7 running the pipeline](https://github.com/user-attachments/assets/2c00e6f1-a0a9-4ffb-ab3b-cf95c9503477)
+
+![8 viewing logs of pipeline](https://github.com/user-attachments/assets/df694acd-ca6a-4cea-a534-d242a17069df)
+
+Again: The logs show that everything is working perfectly.<br>
+The final step of the pipeline: Deploying the application to the openshift cluster using the predefined 'openshift-client' task.<br>
+
+![9 adding deploy openshift-client task to pipeline](https://github.com/user-attachments/assets/4509c931-3b0f-4985-8ca0-afcfd50fe442)
+
+Pipeline is executed and the logs are examined:<br>
+
+![10 viewing logs of deploy](https://github.com/user-attachments/assets/36ac8452-7280-44f4-ad62-2b4b66acf4be)
+
+Again: The logs show that everything is working perfectly.<br>
+As an additional test, the generated deployment / pod is also checked:<br>
+
+![11 confirming running pod of deployment](https://github.com/user-attachments/assets/6bc5f109-ad91-4306-a600-298938d381a9)
+
+Status is 'Running', so everything fits.<br>
+The project has been successfully completed!<br>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <br>
 <br>
